@@ -1,0 +1,11 @@
+python3 ./cifar10_base.py   --logfile './logs/cifar10_base.mat'
+python3 ./cifar10_opt.py    --logfile './logs/cifar10_opt.mat'
+
+python3 ./cifar100_base.py  --logfile './logs/cifar10_base.mat'
+python3 ./cifar100_opt.py   --logfile './logs/cifar10_opt.mat'
+
+python3 ./mnist_img_base.py --logfile './logs/mnist_img_base.mat'
+python3 ./mnist_img_opt.py  --logfile './logs/mnist_img_opt.mat'
+
+python3 ./mnist_rnd_base.py --logfile './logs/mnist_rnd_base.mat'
+python3 ./mnist_rnd_opt.py  --logfile './logs/mnist_rnd_opt.mat'
