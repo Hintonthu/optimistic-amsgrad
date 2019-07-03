@@ -1,6 +1,6 @@
 # optimistic_amsgrad
 
-This repository contains the scripts and codes to reproduce the experiments (precisely, Appendix A) in [the paper](https://arxiv.org/pdf/1903.01435.pdf):
+This repository contains the scripts and codes to reproduce the experimets in [the paper](https://arxiv.org/pdf/1903.01435.pdf):
 ```
 Optimistic Adaptive Acceleration for Optimization.
 Jun-Kun Wang, Xiaoyun Li, and Ping Li. arXiv:1903.01435, 2019.
