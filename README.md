@@ -57,13 +57,13 @@ Please see *experiment.txt* for replicating the results. In the directory *figur
 ### MNIST-back-img noisy dataset results
 
 <p float="left">
-  <img src="./myfig/M_image_train_acc.jpg" width="400" />
-  <img src="./myfig/M_image_train_loss.jpg" width="400" /> 
+  <img src="./myfig/mnist_img_train_acc.jpg" width="400" />
+  <img src="./myfig/mnist_img_train_loss.jpg" width="400" /> 
 </p>
 
 <p float="left">
-  <img src="./myfig/M_image_test_acc.jpg" width="400" />
-  <img src="./myfig/M_image_test_loss.jpg" width="400" /> 
+  <img src="./myfig/mnist_img_test_acc.jpg" width="400" />
+  <img src="./myfig/mnist_img_test_loss.jpg" width="400" /> 
 </p>
 
 
