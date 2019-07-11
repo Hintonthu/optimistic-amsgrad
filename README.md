@@ -10,7 +10,7 @@ We propose [Optimistic-AMSGrad](https://arxiv.org/pdf/1903.01435.pdf), a new alg
 The experiments were conducted on
 - CIFAR 10   + Res18 
 - CIFAR 100  + Res18 
-- Two MNIST datasets corrupted by some noise + a four-layer conv-net. The data can be downloaded from this link [https://www.dropbox.com/sh/afuj32008ahmjc9/AAAhX05rQG42OpB_u36cVV6fa?dl=0](https://www.dropbox.com/sh/afuj32008ahmjc9/AAAhX05rQG42OpB_u36cVV6fa?dl=0)
+- MNIST dataset corrupted by some noise + a four-layer conv-net. The data can be downloaded from this link [https://www.dropbox.com/sh/afuj32008ahmjc9/AAAhX05rQG42OpB_u36cVV6fa?dl=0](https://www.dropbox.com/sh/afuj32008ahmjc9/AAAhX05rQG42OpB_u36cVV6fa?dl=0)
 
 [Optimistic-AMSGrad](https://arxiv.org/pdf/1903.01435.pdf) significantly improves [AMSGrad](https://openreview.net/pdf?id=ryQu7f-RZ) in terms of all the following measures:
 cross entropy loss on training data, cross entropy loss on testing data, classification accuracy on training 
@@ -51,18 +51,6 @@ Please see *experiment.txt* for replicating the results. In the directory *figur
 <p float="left">
   <img src="./myfig/cifar100_test_acc.jpg" width="400" />
   <img src="./myfig/cifar100_test_loss.jpg" width="400" /> 
-</p>
-
-### MNIST-back-rand noisy dataset results
-
-<p float="left">
-  <img src="./myfig/M_rand_train_acc.jpg" width="400" />
-  <img src="./myfig/M_rand_train_loss.jpg" width="400" /> 
-</p>
-
-<p float="left">
-  <img src="./myfig/M_rand_test_acc.jpg" width="400" />
-  <img src="./myfig/M_rand_test_loss.jpg" width="400" /> 
 </p>
 
 
