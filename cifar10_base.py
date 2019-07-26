@@ -12,8 +12,8 @@ import time
 import os
 import argparse
 
-from models import *
 from utils import progress_bar
+from models_new import resnet
 #from torch.optim.lr_scheduler import MultiStepLR
 
 parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
@@ -66,7 +66,8 @@ classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship'
 # Model
 print('==> Building model..')
 # net = VGG('VGG19')
-net = ResNet18()
+# net = ResNet18()
+net = resnet.ResNet18(num_classes = 10)
 # net = PreActResNet18()
 # net = GoogLeNet()
 # net = DenseNet121()
@@ -77,7 +78,7 @@ net = ResNet18()
 # net = ShuffleNetG2()
 # net = SENet18()
 # net = ShuffleNetV2(1)
-net = net.to(device)
+# net = net.to(device)
 if device == 'cuda':
     net = torch.nn.DataParallel(net)
     cudnn.benchmark = True

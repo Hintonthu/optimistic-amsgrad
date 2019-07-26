@@ -14,7 +14,7 @@ import argparse
 
 import Optadam_torch
 
-from models import *
+from models_new import resnet
 from utils import progress_bar
 
 
@@ -68,7 +68,8 @@ classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship'
 # Model
 print('==> Building model..')
 # net = VGG('VGG19')
-net = ResNet18()
+# net = ResNet18()
+net = resnet.ResNet18(num_classes = 10)
 # net = PreActResNet18()
 # net = GoogLeNet()
 # net = DenseNet121()
@@ -81,7 +82,8 @@ net = ResNet18()
 # net = ShuffleNetV2(1)
 net = net.to(device)
 ####################
-net_aux = ResNet18()         
+#net_aux = ResNet18()         
+net_aux = resnet.ResNet18(num_classes = 10)
 net_aux = net_aux.to(device) 
 ####################
 if device == 'cuda':
